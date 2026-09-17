@@ -1,0 +1,1684 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>جزوه تخصصی روماتولوژی | جلسه هشتم: اسکلرودرمی (Systemic Sclerosis)</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700;800&display=swap');
+
+    :root {
+      --primary:    #1a237e;
+      --secondary:  #283593;
+      --accent1:    #0277bd;
+      --accent2:    #00838f;
+      --accent3:    #6a1b9a;
+      --accent4:    #ad1457;
+      --accent5:    #e65100;
+      --bg:         #f0f4ff;
+      --card:       #ffffff;
+      --text:       #1a1a2e;
+      --muted:      #546e7a;
+      --border:     #c5cae9;
+      --green:      #1b5e20;
+      --greenlight: #e8f5e9;
+      --redlight:   #ffebee;
+      --red:        #b71c1c;
+      --yellowlight:#fff8e1;
+      --yellow:     #f57f17;
+      --bluelight:  #e3f2fd;
+      --blue:       #0d47a1;
+      --purplelight:#f3e5f5;
+      --purple:     #4a148c;
+      --teallight:  #e0f7fa;
+      --teal:       #006064;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Vazirmatn', Tahoma, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.9;
+      font-size: 15px;
+    }
+
+    /* ===== COVER ===== */
+    .cover {
+      background: linear-gradient(135deg, #1a237e 0%, #283593 40%, #0277bd 100%);
+      color: white;
+      text-align: center;
+      padding: 60px 30px 50px;
+      position: relative;
+      overflow: hidden;
+    }
+    .cover::before {
+      content: '';
+      position: absolute;
+      top: -80px; left: -80px;
+      width: 300px; height: 300px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 50%;
+    }
+    .cover::after {
+      content: '';
+      position: absolute;
+      bottom: -60px; right: -60px;
+      width: 250px; height: 250px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 50%;
+    }
+    .cover .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 50px;
+      padding: 6px 20px;
+      font-size: 13px;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+    }
+    .cover h1 {
+      font-size: 2.3em;
+      font-weight: 800;
+      margin-bottom: 10px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    .cover h2 {
+      font-size: 1.25em;
+      font-weight: 400;
+      opacity: 0.92;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+    .cover .meta {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .cover .meta-item {
+      background: rgba(255,255,255,0.12);
+      border-radius: 12px;
+      padding: 10px 20px;
+      font-size: 13px;
+      backdrop-filter: blur(5px);
+    }
+    .cover .meta-item span { display: block; font-weight: 700; font-size: 15px; margin-top: 3px; }
+
+    /* ===== TOC ===== */
+    .toc {
+      background: white;
+      margin: 30px auto;
+      max-width: 960px;
+      border-radius: 16px;
+      padding: 30px 35px;
+      box-shadow: 0 4px 20px rgba(26,35,126,0.08);
+      border-right: 5px solid var(--primary);
+    }
+    .toc h3 {
+      font-size: 1.2em;
+      color: var(--primary);
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .toc ol {
+      padding-right: 25px;
+    }
+    .toc ol li {
+      padding: 6px 0;
+      color: var(--accent1);
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .toc ol li a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .toc ol li a:hover { color: var(--primary); text-decoration: underline; }
+
+    /* ===== MAIN WRAPPER ===== */
+    .main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px 80px;
+    }
+
+    /* ===== SECTION HEADER ===== */
+    .section-header {
+      border-radius: 14px;
+      padding: 18px 25px;
+      margin: 40px 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: white;
+      font-size: 1.25em;
+      font-weight: 700;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+    }
+    .section-header .icon {
+      font-size: 1.4em;
+      background: rgba(255,255,255,0.2);
+      border-radius: 50%;
+      width: 44px; height: 44px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .sh-blue   { background: linear-gradient(135deg, #1565c0, #0288d1); }
+    .sh-purple { background: linear-gradient(135deg, #6a1b9a, #ab47bc); }
+    .sh-teal   { background: linear-gradient(135deg, #00695c, #26a69a); }
+    .sh-red    { background: linear-gradient(135deg, #b71c1c, #ef5350); }
+    .sh-orange { background: linear-gradient(135deg, #e65100, #ff7043); }
+    .sh-green  { background: linear-gradient(135deg, #1b5e20, #43a047); }
+    .sh-indigo { background: linear-gradient(135deg, #283593, #5c6bc0); }
+    .sh-pink   { background: linear-gradient(135deg, #880e4f, #e91e63); }
+    .sh-brown  { background: linear-gradient(135deg, #4e342e, #8d6e63); }
+    .sh-cyan   { background: linear-gradient(135deg, #006064, #00acc1); }
+
+    /* ===== SUBSECTION ===== */
+    .subsection {
+      background: white;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 22px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      border-top: 4px solid transparent;
+    }
+    .sub-blue   { border-top-color: #1565c0; }
+    .sub-purple { border-top-color: #6a1b9a; }
+    .sub-teal   { border-top-color: #00695c; }
+    .sub-red    { border-top-color: #b71c1c; }
+    .sub-orange { border-top-color: #e65100; }
+    .sub-green  { border-top-color: #1b5e20; }
+    .sub-indigo { border-top-color: #283593; }
+    .sub-pink   { border-top-color: #880e4f; }
+    .sub-cyan   { border-top-color: #006064; }
+
+    .subsection h4 {
+      font-size: 1.1em;
+      font-weight: 700;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px dashed var(--border);
+      color: var(--secondary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* ===== INFO BOX ===== */
+    .infobox {
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      display: flex;
+      gap: 12px;
+      font-size: 14px;
+      align-items: flex-start;
+    }
+    .infobox .ib-icon { font-size: 1.3em; flex-shrink: 0; margin-top: 1px; }
+    .ib-blue   { background: var(--bluelight);   border-right: 4px solid #1565c0; color: #0d1b5e; }
+    .ib-green  { background: var(--greenlight);  border-right: 4px solid #2e7d32; color: #1b3a1f; }
+    .ib-red    { background: var(--redlight);    border-right: 4px solid #c62828; color: #5c0000; }
+    .ib-yellow { background: var(--yellowlight); border-right: 4px solid #f9a825; color: #4a2c00; }
+    .ib-purple { background: var(--purplelight); border-right: 4px solid #6a1b9a; color: #2d0048; }
+    .ib-teal   { background: var(--teallight);   border-right: 4px solid #006064; color: #003033; }
+
+    /* ===== LIST STYLES & MOBILE/SAFARI FIX ===== */
+    .list-styled {
+      list-style: none;
+      padding: 0;
+      margin: 8px 0;
+    }
+    .list-styled li {
+      padding: 6px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 14.5px;
+      border-bottom: 1px dotted #e8eaf6;
+    }
+    .list-styled li:last-child { border-bottom: none; }
+    .list-styled li::before {
+      content: '◈';
+      color: var(--accent1);
+      flex-shrink: 0;
+      margin-top: 2px;
+      font-size: 13px;
+    }
+    .list-styled.green li::before  { color: #2e7d32; }
+    .list-styled.red li::before    { color: #c62828; }
+    .list-styled.purple li::before { color: #6a1b9a; }
+    .list-styled.teal li::before   { color: #006064; }
+    .list-styled.orange li::before { color: #e65100; }
+
+    /* قانون اختصاصی جلوگیری از به‌هم‌ریختگی خطوط در پلتفرم‌های همراه و سافاری */
+    .li-content {
+      flex: 1;
+      display: inline;
+      line-height: 1.8;
+      color: var(--text);
+    }
+
+    /* ===== KEY-VALUE ROW (INLINE FLOW FIX) ===== */
+    .kv-row {
+      padding: 8px 0;
+      font-size: 14px;
+      border-bottom: 1px dotted #e0e4f8;
+      line-height: 1.8;
+    }
+    .kv-row:last-child { border-bottom: none; }
+    .kv-key {
+      font-weight: 700;
+      color: var(--secondary);
+      display: inline;
+      margin-left: 6px;
+    }
+    .kv-value {
+      color: var(--text);
+      display: inline;
+    }
+
+    /* ===== TAGS / PILLS ===== */
+    .tag {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      margin: 2px 3px;
+    }
+    .tag-blue   { background: #e3f2fd; color: #0d47a1; }
+    .tag-red    { background: #ffebee; color: #b71c1c; }
+    .tag-green  { background: #e8f5e9; color: #1b5e20; }
+    .tag-purple { background: #f3e5f5; color: #4a148c; }
+    .tag-orange { background: #fff3e0; color: #e65100; }
+    .tag-teal   { background: #e0f7fa; color: #006064; }
+    .tag-yellow { background: #fff8e1; color: #f57f17; }
+    .tag-pink   { background: #fce4ec; color: #880e4f; }
+
+    /* ===== TABLE ===== */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 18px 0;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      border: 1px solid var(--border);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13.5px;
+      text-align: right;
+    }
+    table thead tr {
+      background: var(--primary);
+      color: white;
+    }
+    table thead th {
+      padding: 12px 14px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+    table tbody tr:nth-child(even) { background: #f8faff; }
+    table tbody tr:hover { background: #eef2ff; }
+    table tbody td {
+      padding: 11px 14px;
+      border-bottom: 1px solid #e0e4f8;
+      vertical-align: middle;
+      line-height: 1.7;
+    }
+    table tbody tr:last-child td { border-bottom: none; }
+
+    /* ===== HIGHLIGHT BADGE ===== */
+    .hbadge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: linear-gradient(135deg, #fff176, #ffee58);
+      color: #4a2c00;
+      border: 1px solid #f9a825;
+      border-radius: 8px;
+      padding: 3px 9px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    /* ===== GRID 2-COL ===== */
+    .grid2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 16px 0;
+    }
+    @media(max-width:680px){ .grid2 { grid-template-columns: 1fr; } }
+
+    /* ===== MINI CARD ===== */
+    .mini-card {
+      border-radius: 10px;
+      padding: 14px 16px;
+      font-size: 13.5px;
+      line-height: 1.7;
+    }
+    .mc-blue   { background: #e8eaf6; border-right: 4px solid #3949ab; }
+    .mc-green  { background: #e8f5e9; border-right: 4px solid #388e3c; }
+    .mc-red    { background: #ffebee; border-right: 4px solid #e53935; }
+    .mc-purple { background: #f3e5f5; border-right: 4px solid #8e24aa; }
+    .mc-orange { background: #fff3e0; border-right: 4px solid #f4511e; }
+    .mc-teal   { background: #e0f7fa; border-right: 4px solid #00838f; }
+    .mini-card h5 { font-weight: 700; margin-bottom: 8px; font-size: 14.5px; }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: var(--primary);
+      color: rgba(255,255,255,0.85);
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 13.5px;
+      margin-top: 60px;
+      line-height: 1.8;
+    }
+
+    strong.em  { color: #b71c1c; font-weight: 700; }
+    strong.em2 { color: #1565c0; font-weight: 700; }
+    strong.em3 { color: #2e7d32; font-weight: 700; }
+    strong.em4 { color: #6a1b9a; font-weight: 700; }
+
+    /* ===================================================
+       ۳. کدهای استایل سیستم تعاملی و ابزار مطالعه (CSS)
+       =================================================== */
+    /* ===== سیستم تعاملی یادداشت‌های درون‌متنی مینیاتوری ===== */
+    .note-marker {
+      background-color: #ffd54f !important;
+      border: 1px solid #ffb300 !important;
+      color: #000 !important;
+      border-radius: 4px !important;
+      cursor: pointer !important;
+      padding: 1px 4px !important;
+      margin: 0 3px !important;
+      font-size: 11px !important;
+      user-select: none !important;
+      display: inline-block !important;
+      vertical-align: middle !important;
+      font-weight: bold !important;
+      position: relative;
+      animation: notePulse 2s infinite;
+    }
+    @keyframes notePulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.15); }
+      100% { transform: scale(1); }
+    }
+
+    /* کدهای CSS خالص جهت سازگاری و نمایش یادداشت در نمایشگر فایل آفلاین iOS */
+    .note-tooltip {
+      display: none;
+      position: absolute;
+      bottom: 125%;
+      right: 0;
+      background: #37474f;
+      color: #ffffff;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 12px;
+      min-width: 180px;
+      max-width: 250px;
+      z-index: 1000;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+      white-space: normal;
+      line-height: 1.5;
+      font-weight: normal;
+      text-align: right;
+    }
+    .note-marker:hover .note-tooltip, .note-marker:active .note-tooltip {
+      display: block !important;
+    }
+
+    /* ===== ساختار پنجره مودال مدیریت یادداشت‌ها ===== */
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(26, 35, 126, 0.5);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 10000;
+      direction: rtl;
+    }
+    .modal-card {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+      border-top: 5px solid var(--primary);
+    }
+    .modal-card h4 {
+      margin-bottom: 14px;
+      color: var(--primary);
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .modal-textarea {
+      width: 100%;
+      height: 120px;
+      padding: 10px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-family: inherit;
+      resize: none;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+    .modal-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+    .btn {
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-family: inherit;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      font-size: 13px;
+    }
+    .btn-primary { background: var(--primary); color: white; }
+    .btn-danger { background: var(--red); color: white; }
+    .btn-secondary { background: #eceff1; color: #37474f; }
+
+    /* ===== نوار ابزار تعاملی انتهای صفحه ===== */
+    #highlight-panel {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: white;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.2);
+      border-radius: 50px;
+      padding: 10px 20px;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border: 2px solid var(--primary);
+      direction: rtl;
+      width: max-content;
+      max-width: 95%;
+      overflow-x: auto;
+    }
+    #highlight-panel span {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--primary);
+      white-space: nowrap;
+    }
+    .hl-btn {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      border: 1px solid rgba(0,0,0,0.2);
+      cursor: pointer;
+      transition: transform 0.1s;
+      flex-shrink: 0;
+    }
+    .hl-btn:hover { transform: scale(1.15); }
+    .hl-btn-yellow { background-color: #fff59d; }
+    .hl-btn-green  { background-color: #c8e6c9; }
+    .hl-btn-blue   { background-color: #bbdefb; }
+    .hl-btn-pink   { background-color: #f8bbd0; }
+    .panel-action-btn {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: bold;
+      cursor: pointer;
+      font-family: inherit;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .panel-action-btn-red { background: var(--red); }
+  </style>
+</head>
+<body>
+
+<!-- ===================== COVER ===================== -->
+<div class="cover">
+  <div class="badge">دانشگاه علوم پزشکی • دوره تخصصی روماتولوژی بالینی</div>
+  <h1>اسکلرودرمی و اسکلروز سیستمیک (SSc)</h1>
+  <h2>پاتوفیزیولوژی عروقی، تظاهرات پوستی و احشایی، کرایتریای تشخیصی ACR/EULAR و فارماکوتراپی جامع</h2>
+  <div class="meta">
+    <div class="meta-item">مدرس: <span>دکتر سلطانی</span></div>
+    <div class="meta-item">نویسنده: <span>احمدرضا عبداللهی پور</span></div>
+    <div class="meta-item">برای دریافت فایل های بیشتر به بات تلگرامی مراجعه کنید
+                        
+<a href="https://t.me/Medical_house_bot" target="_blank" style="
+    display: inline-block;
+    padding: 5px 12px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;">
+    🤖 شروع گفتگو با بات
+</a></div>
+  </div>
+</div>
+
+<!-- ===================== TOC ===================== -->
+<div class="toc">
+  <h3>📋 فهرست تفصیلی سرفصل‌های آموزشی</h3>
+  <ol>
+    <li><a href="#sec-raynaud">پدیده رینود (Raynaud's Phenomenon): فیزیوپاتولوژی، سه فاز رنگی و افتراق اولیه از ثانویه</a></li>
+    <li><a href="#sec-capillaroscopy">کاپیلاروسکوپی چین ناخن (Nailfold Capillaroscopy): تکنیک و معیارهای تشخیصی</a></li>
+    <li><a href="#sec-pathogenesis">پاتوژنز اسکلرودرمی: آسیب اندوتلیال، آبشار سایتوکاینی و نقش داروی توسیلیزوماب</a></li>
+    <li><a href="#sec-ddx">تشخیص‌های افتراقی اسکلرودرمی و تمایز کلیدی با فاشئیت ائوزینوفیلی</a></li>
+    <li><a href="#sec-classification">تقسیم‌بندی بالینی: فرم لوکالیزه در برابر فرم‌های سیستمیک (منتشر و محدود)</a></li>
+    <li><a href="#sec-antibodies">پروفایل اتوآنتی‌بادی‌ها (Scl-70، سنترومر) و همبستگی آن با پروگنوز بالینی</a></li>
+    <li><a href="#sec-cutaneous">تظاهرات بالینی پوست، سیر زمانی، نمای نمک‌وفلفلی و امتیازدهی رُدنان (mRSS)</a></li>
+    <li><a href="#sec-msk">درگیری‌های اسکلتی-عضلانی و پدیده آکرو-استئولیز دیجیتال (Acro-osteolysis)</a></li>
+    <li><a href="#sec-pulmonary">درگیری ریوی: بیماری بینابینی ریه (ILD) و هایپرتنشن شریان ریوی (PAH)</a></li>
+    <li><a href="#sec-renal">بحران کلیوی اسکلرودرمی (SRC): تظاهرات، نمای پوست‌پیازی و پروتکل کاپتوپریل</a></li>
+    <li><a href="#sec-gi-cardiac">درگیری دستگاه گوارش (Watermelon Stomach، SIBO) و اختلالات هدایتی قلب</a></li>
+    <li><a href="#sec-criteria">معیارهای طبقه‌بندی ACR/EULAR 2013 (جدول کامل امتیازدهی تشخیصی)</a></li>
+    <li><a href="#sec-treatment">راهنمای جامع مدیریت درمانی و پروتکل فارماکوتراپی بر اساس ارگان هدف</a></li>
+  </ol>
+</div>
+
+<!-- ===================== MAIN CONTENT ===================== -->
+<div class="main">
+
+  <!-- SECTION 1 -->
+  <div class="section-header sh-blue" id="sec-raynaud">
+    <div class="icon">❄️</div>
+    <span>۱. پدیده رینود (Raynaud's Phenomenon): پاتوفیزیولوژی، فازها و تفاوت‌های بالینی</span>
+  </div>
+
+  <div class="subsection sub-blue">
+    <h4>مفهوم بالینی و مکانیسم سه‌فازی (رمز ساق)</h4>
+    <p>
+      پدیده رینود یک اختلال وازواسپاستیک در گردش خون محیطی است که طی آن، در اثر مواجهه با محرک‌هایی نظیر سرما یا هیجانات و استرس‌های روحی، رنگ پوست نواحی دیستال و انتهایی بدن دچار تغییرات متوالی و مشخص می‌شود.
+    </p>
+
+    <div class="infobox ib-yellow">
+      <span class="ib-icon">💡</span>
+      <div>
+        <strong>رمز بالینی جهت حفظ توالی تغییر رنگ در رینود کلاسیک: واژه «ساق»</strong>
+        <div class="kv-row"><span class="kv-key">۱. س (سفید):</span><span class="kv-value">وازواسپاسم حاد و بسته شدن ناگهانی شریانچه‌ها و آرتریول‌ها که مانع از ورود جریان خون به بستر مویرگی می‌گردد (Pallor / Ischemia).</span></div>
+        <div class="kv-row"><span class="kv-key">۲. آ (آبی/کبود):</span><span class="kv-value">به دنبال انسداد عروقی و تاخیر در تخلیه خون، هموگلوبین اکسیژن خود را به بافت‌ها از دست داده و استاز وریدی موجب سیانوز بافتی و کبودی شدید انگشتان می‌شود (Cyanosis).</span></div>
+        <div class="kv-row"><span class="kv-key">۳. ق (قرمز):</span><span class="kv-value">با برطرف شدن اسپاسم، خونرسانی مجدداً برقرار شده و هیپرمی واکنشی (Reperfusion Hyperemia) سبب قرمزی پررنگ، سوزش، تورم و احساس درد ضربان‌دار می‌گردد (Rubor).</span></div>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div class="mini-card mc-blue">
+        <h5>اپیدمیولوژی و نحوه شرح‌حال‌گیری صحیح</h5>
+        <ul class="list-styled">
+          <li><span class="li-content">پدیده رینود با شیوع بالا در <strong>خانم‌های جوان زیر ۲۵ سال</strong> و اغلب با سابقه خانوادگی مثبت مشاهده می‌شود.</span></li>
+          <li><span class="li-content">در حدود ۱۰ درصد افراد کل جامعه بدون وجود هرگونه بیماری بافت همبند یا زمینه‌ای دچار رینود اولیه هستند.</span></li>
+          <li><span class="li-content"><strong>نکته مصاحبه بالینی:</strong> هرگز نباید از بیمار سوال جهت‌دار نظیر «آیا دست شما در سرما سفید، آبی یا قرمز می‌شود؟» پرسید؛ بلکه باید سوال باز پرسیده شود: «آیا دست شما در مواجهه با سرما یا اضطراب تغییر رنگ می‌دهد؟» اکثریت بیماران پاسخ می‌دهند که دست‌هایشان کبود یا سیاه می‌شود.</span></li>
+        </ul>
+      </div>
+
+      <div class="mini-card mc-red">
+        <h5>داروهای تشدیدکننده یا محرک رینود (ممنوعیت‌های دارویی)</h5>
+        <ul class="list-styled red">
+          <li><span class="li-content"><strong>بتابلاکرها (نظیر پروپرانولول، آتنولول):</strong> به دلیل مهار گیرنده‌های بتادو و ایجاد انقباض عروقی بدون مخالفت (Unopposed Alpha) اکیداً ممنوع هستند.</span></li>
+          <li><span class="li-content"><strong>آلکالوئیدهای ارگوت (نظیر ارگوتامین، دی‌هیدروارگوتامین):</strong> مورد استفاده در میگرن حاد، اسپاسم شدید عروقی القا می‌کنند.</span></li>
+          <li><span class="li-content"><strong>بلئومایسین (Bleomycin):</strong> داروی شیمی‌درمانی و پلورودزیس که اثرات فیبروزان و تخریب عروقی بارز دارد.</span></li>
+          <li><span class="li-content"><strong>سمپاتومیمتیک‌ها و آمفتامین‌ها:</strong> انقباض شدید شریان‌های محیطی.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="infobox ib-blue">
+      <span class="ib-icon">📌</span>
+      <div>
+        <strong>نکته طلایی امتحانی:</strong> پدیده رینود <strong>شایع‌ترین تظاهر غیرپوستی</strong> در اسکلرودرمی سیستمیک (SSc) است و در بیش از ۹۵ تا ۹۹ درصد بیماران رخ می‌دهد. بروز زخم پولپ انگشتان (Digital Pulp Ulcer) همراه با سفتی پوست، زنگ خطر جدی اسکلرودرمی است.
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>ویژگی افتراقی</th>
+            <th>رینود اولیه (Primary Raynaud)</th>
+            <th>رینود ثانویه (Secondary Raynaud)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>بیماری زمینه‌ای</strong></td>
+            <td>ایدیوپاتیک، بدون ارتباط با بیماری‌های سیستمیک</td>
+            <td>همراه با بیماری‌های بافت همبند (اسکلرودرمی، لوپوس، شوگرن) یا هایپوتیروئیدی</td>
+          </tr>
+          <tr>
+            <td><strong>سن شروع</strong></td>
+            <td>معمولاً سنین پایین (نوجوانی و زیر ۲۵ سال)</td>
+            <td>معمولاً سنین بالاتر (بیش از ۳۰ تا ۳۵ سال)</td>
+          </tr>
+          <tr>
+            <td><strong>یافته‌های کاپیلاروسکوپی ناخن</strong></td>
+            <td>کاملاً نرمال و بدون تغییر مویرگی (حالت Hairpin سالم)</td>
+            <td>غیرطبیعی: مگاکپیلاری، از دست رفتن مویرگ‌ها (Avascular zones) و انشعابات غیرعادی</td>
+          </tr>
+          <tr>
+            <td><strong>نکروز بافتی و زخم انگشتان</strong></td>
+            <td>ابداً ایجاد نمی‌شود؛ فاقد عوارض نکروتیک</td>
+            <td>شایع؛ نکروز، آکرو-استئولیز، اسکارهای حفره‌ای (Pitting Scars) و گانگرن</td>
+          </tr>
+          <tr>
+            <td><strong>اتوآنتی‌بادی‌ها (ANA، Scl-70، ACA)</strong></td>
+            <td>منفی</td>
+            <td>مثبت با تیتر بالا</td>
+          </tr>
+          <tr>
+            <td><strong>رفتار عمومی بیمار</strong></td>
+            <td>بیمار برای پیشگیری در زمستان صرفاً دستکش می‌پوشد</td>
+            <td>نیازمند مداخلات دارویی قوی عروقی جهت مهار ایسکمی بافتی و تخریب اندام</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SECTION 2 -->
+  <div class="section-header sh-teal" id="sec-capillaroscopy">
+    <div class="icon">🔬</div>
+    <span>۲. کاپیلاروسکوپی چین ناخن (Nailfold Capillaroscopy): ابزار استاندارد افتراق بالینی</span>
+  </div>
+
+  <div class="subsection sub-teal">
+    <h4>اهمیت تشخیصی ارزیابی میکروواسکولار در چین ناخن (Nail Fold)</h4>
+    <p>
+      اولین و حیاتی‌ترین اقدام بالینی و پاراکلینیکی در برخورد با بیماری که با علامت رینود مراجعه کرده است، <strong>کاپیلاروسکوپی چین پروگزیمال ناخن (Nailfold Capillaroscopy)</strong> است. این ناحیه به دلیل شفافیت بافتی و موازی بودن مویرگ‌ها با سطح پوست، بهترین پنجره برای دیدن مستقیم شبکه مویرگی بدن محسوب می‌شود.
+    </p>
+
+    <div class="grid2">
+      <div class="mini-card mc-teal">
+        <h5>نمای طبیعی مویرگ‌ها (رینود اولیه)</h5>
+        <ul class="list-styled teal">
+          <li><span class="li-content">مویرگ‌های لایه اپیدرم کاملاً منظم، با تراکم یکنواخت و در فواصل مساوی کنار یکدیگر چیده شده‌اند.</span></li>
+          <li><span class="li-content">حالت ساختاری مویرگ‌ها شبیه <strong>سوزن مو یا گیره سر (Hairpin-like)</strong> با قوس متقارن و باریک است.</span></li>
+          <li><span class="li-content">جریان ممتد گلبول‌های قرمز (RBCs) درون لوپ‌ها به صورت زنده و خطی مشاهده می‌گردد.</span></li>
+        </ul>
+      </div>
+
+      <div class="mini-card mc-purple">
+        <h5>نمای پاتولوژیک اسکلرودرمی (رینود ثانویه)</h5>
+        <ul class="list-styled purple">
+          <li><span class="li-content">تعداد مویرگ‌ها به شدت کاهش می‌یابد (Capillary Loss / Drop-out).</span></li>
+          <li><span class="li-content">پیدایش مناطق بدون عروق واضح (Avascular Areas).</span></li>
+          <li><span class="li-content">گشاد شدن شدید مویرگ‌ها و تبدیل به مویرگ‌های غول‌آسا (Giant Capillaries / Megacapillaries).</span></li>
+          <li><span class="li-content">خونریزی‌های میکروتیک اطراف ناخن و مویرگ‌های پیچ‌خورده و درهم‌تنیده (Crossed / Ramified / Bushy).</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="infobox ib-teal">
+      <span class="ib-icon">🩺</span>
+      <div>
+        <strong>سناریوی بالینی آزمون‌های بورد و پره‌انترنی:</strong>
+        خانم جوان ۲۵ ساله‌ای به دنبال دست زدن به چوب اسکی دچار تغییر رنگ کبودی در انگشتان دست می‌شود. بهترین و ارجح‌ترین اقدام سرپایی جهت تفکیک رینود اولیه (خوش‌خیم) از اسکلرودرمی زودهنگام چیست؟<br>
+        <span class="tag tag-teal">پاسخ قطعی:</span> <strong>کاپیلاروسکوپی چین ناخن (Nailfold Capillaroscopy)</strong>. در صورت مشاهده هرگونه الگوی غیر Hairpin، بیمار بلافاصله باید از نظر پنل اتوآنتی‌بادی‌های خونی و سی‌تی‌اسکن قفسه سینه ارزیابی گردد.
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 3 -->
+  <div class="section-header sh-purple" id="sec-pathogenesis">
+    <div class="icon">🧬</div>
+    <span>۳. پاتوژنز اسکلرودرمی: از آسیب اندوتلیال تا فیبروز پیشرونده و نقش IL-6</span>
+  </div>
+
+  <div class="subsection sub-purple">
+    <h4>زنجیره وقایع آسیب بافتی در اسکلروز سیستمیک</h4>
+    <p>
+      پاتوژنز اسکلرودرمی بر یک سه‌گانه اصلی شامل: <strong>۱. آسیب عروقی (واسکولوپاتی)، ۲. فعال‌سازی بیش از حد سیستم ایمنی، و ۳. فیبروز شدید و پیشرونده به دلیل تجمع خارج‌سلولی کلاژن</strong> استوار است.
+    </p>
+
+    <div class="infobox ib-purple">
+      <span class="ib-icon">⚠️</span>
+      <div>
+        <strong>اولین تغییر پاتولوژیک بیماری:</strong> برخلاف تصور اولیه، اولین جرقه آسیب در اسکلرودرمی از بافت کلاژن آغاز نمی‌شود، بلکه منحصراً از <strong>سلول‌های اندوتلیال (Endothelial Cells) دیواره داخلی عروق</strong> کلید می‌خورد.
+      </div>
+    </div>
+
+    <ul class="list-styled purple">
+      <li><span class="li-content"><div class="kv-row"><span class="kv-key">آسیب اندوتلیوم و فعال‌سازی پلاکتی:</span><span class="kv-value">آنتی‌بادی‌های خودی، سایتوکاین‌ها و استرس اکسیداتیو موجب تخریب سلول‌های اندوتلیال می‌شوند. به دنبال عریان شدن زیر اندوتلیوم، پلاکت‌ها فعال شده، ترومبوزهای میکروواسکولار شکل گرفته و پلاکت‌ها به هم می‌چسبند.</span></div></span></li>
+      <li><span class="li-content"><div class="kv-row"><span class="kv-key">برهم خوردن تعادل وازوموتور:</span><span class="kv-value">تولید عوامل وازودیلاتور نظیر پروستاسایکلین (PGI2) و نیتریک اکساید (NO) به شدت افت کرده، در حالی که ترشح اندوتلین-۱ (Endothelin-1) که قوی‌ترین منقبض‌کننده عروقی است، افزایش می‌یابد؛ این امر به انسداد پیشرونده مجرای رگ ختم می‌شود.</span></div></span></li>
+      <li><span class="li-content"><div class="kv-row"><span class="kv-key">نقش حیاتی اینترلوکین-۶ (IL-6):</span><span class="kv-value">اینترلوکین ۶ به عنوان یکی از اصلی‌ترین سیتوکین‌های پیش‌التهابی و پیش‌فیبروتیک عمل می‌کند که فنوتیپ فیبروبلاست‌ها را تحریک و مقادیر هنگفتی کلاژن نوع I و III تولید می‌نماید.</span></div></span></li>
+      <li><span class="li-content"><div class="kv-row"><span class="kv-key">کاربرد داروی توسیلیزوماب (Actemra):</span><span class="kv-value">به دلیل نقش محوری IL-6 در فعال‌سازی فیبروبلاست‌ها، مهارکننده اختصاصی گیرنده IL-6 یعنی داروی <strong>توسیلیزوماب (Tocilizumab / Actemra)</strong> دارای تاییدیه معتبر جهت توقف افت عملکرد ریه در بیماران مبتلا به بیماری بینابینی ریه ناشی از اسکلرودرمی (SSc-ILD) می‌باشد.</span></div></span></li>
+      <li><span class="li-content"><div class="kv-row"><span class="kv-key">تمایز بنیادی پاتولوژی با لوپوس:</span><span class="kv-value">تظاهر عروقی عمده در لوپوس اریتماتوز سیستمیک (SLE)، واسکولیت و رسوب کمپلکس‌های ایمنی و ارتشاح نوتروفیلی است؛ در حالی که در اسکلرودرمی آسیب، واسکولوپاتی غیرالتهابی با تکثیر شدید انتیما (Intimal Proliferation) و انسداد مکانیکی مویرگ‌هاست.</span></div></span></li>
+    </ul>
+  </div>
+
+  <!-- SECTION 4 -->
+  <div class="section-header sh-red" id="sec-ddx">
+    <div class="icon">🔍</div>
+    <span>۴. تشخیص‌های افتراقی اسکلرودرمی و تمایز کلیدی با فاشئیت ائوزینوفیلی</span>
+  </div>
+
+  <div class="subsection sub-red">
+    <h4>تشخیص‌های افتراقی بالینی بیماری‌های با سفتی پوست</h4>
+    <p>
+      بیماری‌هایی که با پوست ضخیم و سخت مراجعه می‌کنند محدود هستند اما تمایز دقیق آن‌ها سرنوشت‌ساز است:
+    </p>
+
+    <div class="grid2">
+      <div class="mini-card mc-red">
+        <h5>۱. فاشئیت ائوزینوفیلی (Eosinophilic Fasciitis / سندرم شولمن)</h5>
+        <ul class="list-styled red">
+          <li><span class="li-content">بیمار با سفتی ناگهانی و بارز پوست در اندام‌ها و تنه، معمولاً پس از فعالیت ورزشی سنگین، مراجعه می‌کند.</span></li>
+          <li><span class="li-content"><strong>نمای پوست پرتقالی (Peau d'orange):</strong> به دلیل التهاب لایه‌های عمیق فاسیا، فیبروز فاسیال پوست را به سمت عمق کشیده و ظاهر پرتقالی ایجاد می‌نماید.</span></li>
+          <li><span class="li-content">سروز فاسیال درگیر می‌شود و پوست جدار سینه و بازوها سفت می‌گردد (در شکم فاسیای متناظر وجود ندارد).</span></li>
+          <li><span class="li-content">تشخیص قطعی با <strong>بیوپسی تمام‌ضخامت پوست (Full-thickness Skin/Fascia Biopsy)</strong> است که ارتشاح فراوان ائوزینوفیل‌ها در فاسیا را اثبات می‌کند.</span></li>
+          <li><span class="li-content"><strong>بزرگترین وجه تمایز با اسکلرودرمی:</strong> در فاشئیت ائوزینوفیلی، <strong>پدیده رینود (Raynaud's Phenomenon) وجود ندارد</strong>، انگشتان دست معمولاً درگیر نمی‌شوند و احشای داخلی سالم می‌مانند.</span></li>
+        </ul>
+      </div>
+
+      <div class="mini-card mc-orange">
+        <h5>۲. اسکلردمای دیابتی و سایر سندرم‌های مقلد</h5>
+        <ul class="list-styled orange">
+          <li><span class="li-content"><strong>دیابت ملیتوس (Scleredema Diabeticorum):</strong> سفتی پوست در ناحیه پشت گردن و بالای تنه در مبتلایان دیابت طول‌کشیده و چاق، بدون پدیده رینود و بدون درگیری انگشتان.</span></li>
+          <li><span class="li-content"><strong>کایروآرتروپاتی دیابتی (Diabetic Cheiroarthropathy):</strong> سفتی پوست و مفاصل دست که تست Prayer Sign در آن مثبت می‌شود، فاقد رینود و زخم دیجیتال.</span></li>
+          <li><span class="li-content"><strong>فیبروز سیستمیک نفروژنیک (NSF):</strong> ناشی از تجویز گادولینیوم ام‌آر‌آی در بیماران با نارسایی پیشرفته کلیه؛ ایجاد پلاک‌های متصل به استخوان.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="infobox ib-red">
+      <span class="ib-icon">📊</span>
+      <div>
+        <strong>اپیدمیولوژی تطبیقی و پیش‌آگهی اسکلرودرمی:</strong>
+        نسبت ابتلا در زنان به مردان <strong>۵ به ۱</strong> است (در مقایسه با بیماری لوپوس که نسبت زنان به مردان <strong>۱۰ به ۱</strong> است). بروز بیماری در خانم‌های سیاه‌پوست، پیش‌آگهی بسیار بدتر، درگیری سریع‌تر ریه و مقاومت بیشتری به درمان نشان می‌دهد. تأخیر در تشخیص اسکلرودرمی منجر به عوارض کاملاً برگشت‌ناپذیر فیبروتیک خواهد شد.
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 5 -->
+  <div class="section-header sh-green" id="sec-classification">
+    <div class="icon">🗂️</div>
+    <span>۵. طبقه‌بندی بالینی اسکلرودرمی: لوکالیزه در برابر فرم‌های سیستمیک</span>
+  </div>
+
+  <div class="subsection sub-green">
+    <h4>شاخص‌های تمایز آناتومیک و سیر بالینی انواع بیماری</h4>
+    <p>
+      اسکلرودرمی از نظر بالینی در ابتدا به دو گروه مجزای <strong>لوکالیزه (Localized)</strong> و <strong>سیستمیک (Systemic Sclerosis)</strong> دسته‌بندی می‌شود:
+    </p>
+
+    <div class="grid2">
+      <div class="mini-card mc-teal">
+        <h5>الف) اسکلرودرمی لوکالیزه (Localized Scleroderma)</h5>
+        <ul class="list-styled teal">
+          <li><span class="li-content">بیماری صرفاً به پوست و بافت‌های زیرپوستی محدود بوده و <strong>هیچ‌گونه درگیری احشای داخلی ندارد</strong>.</span></li>
+          <li><span class="li-content">پدیده رینود و اتوآنتی‌بادی‌های اختصاصی سیستمیک در این فرم وجود ندارد.</span></li>
+          <li><span class="li-content"><strong>مورفه‌آ (Morphea):</strong> شایع‌ترین فرم؛ ایجاد پلاک‌های گرد یا بیضی منفرد یا متعدد سفت و واکسی با حاشیه بنفش در مراحل ابتدایی و تغییر رنگ بعدی.</span></li>
+          <li><span class="li-content"><strong>خطی (Linear Scleroderma):</strong> خطوط فیبروزه معمولاً در اندام‌ها و به خصوص در سر و صورت.</span></li>
+          <li><span class="li-content"><strong>فرم ان کوپ د سابر (En coup de sabre):</strong> شباهت به اصابت ضربه شمشیر در پیشانی و اسکالپ دارد که شیار عمقی، آتروفی و کچلی ایجاد می‌کند.</span></li>
+        </ul>
+      </div>
+
+      <div class="mini-card mc-blue">
+        <h5>ب) اسکلرودرمی سیستمیک (Systemic Sclerosis - SSc)</h5>
+        <ul class="list-styled">
+          <li><span class="li-content">همراه با واسکولوپاتی ژنرالیزه، پدیده رینود همگانی و فیبروز احشای حیاتی (ریه، کلیه، قلب و گوارش).</span></li>
+          <li><span class="li-content"><strong>نوع منتشر (Diffuse Cutaneous SSc - dcSSc):</strong> گسترش سفتی پوست به <strong>پروگزیمال آرنج‌ها و زانوها</strong> (درگیری بازو، ران، قفسه سینه یا شکم).</span></li>
+          <li><span class="li-content"><strong>نوع محدود (Limited Cutaneous SSc - lcSSc):</strong> سفتی پوست منحصراً به <strong>دیستال آرنج‌ها و دیستال زانوها</strong> (انگشتان دست و پا، ساق و ساعد) محدود است.</span></li>
+          <li><span class="li-content"><strong>قانون درگیری سر و صورت:</strong> سفتی پوست صورت و گردن در هر دو نوع منتشر و محدود دیده می‌شود؛ بنابراین <strong>درگیری صورت ملاک تفکیک فرم منتشر از محدود نیست!</strong></span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>شاخص مقایسه‌ای</th>
+            <th>اسکلرودرمی منتشر (Diffuse SSc)</th>
+            <th>اسکلرودرمی محدود (Limited SSc)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>مرز پیشروی سفتی پوست</strong></td>
+            <td>پروگزیمال آرنج و زانو (Proximal to Elbow/Knee) + تنه</td>
+            <td>دیستال به آرنج و زانو (Distal to Elbow/Knee) - تنه درگیر نمی‌شود</td>
+          </tr>
+          <tr>
+            <td><strong>فاصله زمانی رینود تا تظاهر بعدی</strong></td>
+            <td>کوتاه: کمتر از ۱ سال پس از رینود، ارگان‌های داخلی یا پوست درگیر می‌شوند</td>
+            <td>طولانی: پدیده رینود سال‌ها (مثلاً ۵ تا ۱۰ سال) قبل از سایر علائم وجود دارد</td>
+          </tr>
+          <tr>
+            <td><strong>نوع اصلی درگیری ریوی</strong></td>
+            <td>بیماری بینابینی و فیبروز پارانشیم ریه (ILD) زودهنگام</td>
+            <td>پرفشاری اولیه شریان ریه (PAH) در مراحل دیررس بیماری</td>
+          </tr>
+          <tr>
+            <td><strong>بحران کلیوی (SRC)</strong></td>
+            <td>شیوع بالا (تا ۱۵-۲۰٪)، زودهنگام و نیازمند پایش مستمر</td>
+            <td>بسیار نادر (کمتر از ۱-۲٪)</td>
+          </tr>
+          <tr>
+            <td><strong>اتوآنتی‌بادی اختصاصی</strong></td>
+            <td>آنتی توپوایزومراز-۱ (Anti-Scl-70) در حدود ۴۰٪ بیماران</td>
+            <td>آنتی سنترومر (Anti-Centromere / ACA) در حدود ۶۰-۷۰٪ بیماران</td>
+          </tr>
+          <tr>
+            <td><strong>امکان تبدیل انواع به یکدیگر</strong></td>
+            <td colspan="2" style="text-align: center; color: var(--red); font-weight: bold;">
+              ⛔ انواع اسکلرودرمی هرگز به یکدیگر تبدیل نمی‌شوند (فرم لیمیتد به دیفیوز یا بالعکس تبدیل نمی‌گردد).
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SECTION 6 -->
+  <div class="section-header sh-indigo" id="sec-antibodies">
+    <div class="icon">🔬</div>
+    <span>۶. پروفایل اتوآنتی‌بادی‌ها و همبستگی بالینی با پیش‌آگهی و درگیری اعضا</span>
+  </div>
+
+  <div class="subsection sub-indigo">
+    <h4>نقش بیومارکرهای سرولوژیک در هدایت غربالگری احشایی</h4>
+    <p>
+      اگرچه مثبت شدن ANA (آنتی‌بادی علیه اجزای هسته) در بیش از ۹۰-۹۵ درصد بیماران اسکلرودرمی دیده می‌شود، اما بررسی اتوآنتی‌بادی‌های اختصاصی جهت پیش‌بینی ارگان هدف و نوع درگیری ضروری است:
+    </p>
+
+    <div class="grid2">
+      <div class="mini-card mc-blue">
+        <h5>۱. آنتی‌بادی علیه توپوایزومراز ۱ (Anti-Scl-70)</h5>
+        <div class="kv-row"><span class="kv-key">شیوع و پیوند بالینی:</span><span class="kv-value">در حدود ۴۰ درصد از مبتلایان به فرم <strong>منتشر (Diffuse)</strong> مثبت می‌شود و در فرم محدود معمولاً منفی است.</span></div>
+        <div class="kv-row"><span class="kv-key">ارگان هدف اولیه:</span><span class="kv-value">همبستگی شدید و مستقیم با درگیری پارانشیم ریه و بروز <strong>فیبروز ریوی (ILD)</strong>، اسکلروز پوستی سریع و افزایش مرگ‌ومیر دارد.</span></div>
+      </div>
+
+      <div class="mini-card mc-purple">
+        <h5>۲. آنتی‌بادی ضد سنترومر (Anti-Centromere Antibody - ACA)</h5>
+        <div class="kv-row"><span class="kv-key">شیوع و پیوند بالینی:</span><span class="kv-value">در ۶۰ تا ۷۰ درصد از بیماران مبتلا به فرم <strong>محدود (Limited)</strong> مثبت است (تنها در ۵٪ فرم منتشر ممکن است مثبت شود).</span></div>
+        <div class="kv-row"><span class="kv-key">ارگان هدف اولیه:</span><span class="kv-value">همبستگی بسیار شدید با افزایش ریسک <strong>پرفشاری شریان ریه (PAH)</strong> و سندرم CREST بدون فیبروز پارانشیم ریه.</span></div>
+      </div>
+    </div>
+
+    <div class="infobox ib-yellow">
+      <span class="ib-icon">⭐</span>
+      <div>
+        <strong>نکات برجسته امتحانی در آنتی‌بادی‌ها:</strong>
+        <ul class="list-styled">
+          <li><span class="li-content">مثبت شدن همزمان هر دو آنتی‌بادی (Double Positive برای Anti-Scl-70 و Anti-Centromere) در یک بیمار، <strong>فوق‌العاده نادر</strong> است و عملاً دیده نمی‌شود.</span></li>
+          <li><span class="li-content">در اسکلرودرمی لوکالیزه (Morphea)، این اتوآنتی‌بادی‌های اختصاصی مثبت نمی‌شوند.</span></li>
+          <li><span class="li-content"><strong>سندرم‌های همپوشانی (Overlap Syndromes):</strong> اسکلرودرمی می‌تواند با سایر بیماری‌های بافت همبند نظیر پلی‌میوزیت (اسکلرومیوزیت)، آرتریت روماتوئید (RA) یا لوپوس همراه شود؛ شدت تظاهرات در فرم‌های اورلپ معمولاً خفیف‌تر از وجود تکی و شدید هر بیماری است.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 7 -->
+  <div class="section-header sh-orange" id="sec-cutaneous">
+    <div class="icon">🖐️</div>
+    <span>۷. تظاهرات پوستی، سیر زمانی، نمای نمک‌وفلفلی و امتیازدهی رُدنان (mRSS)</span>
+  </div>
+
+  <div class="subsection sub-orange">
+    <h4>سیر طبیعی تغییرات بافتی پوست (پف‌آلودگی تا فیبروز و آتروفی)</h4>
+
+    <div class="infobox ib-blue">
+      <span class="ib-icon">🎯</span>
+      <div>
+        <strong>معیار تشخیصی کافی (Sufficient Criterion):</strong>
+        اگر ضخیم‌شدگی و سفتی پوست دست به <strong>پروگزیمال مفاصل متکارپوفالانژیال (MCP)</strong> گسترش یافته باشد (یعنی مچ دست، ساعد، بازو یا تنه را دوطرفه درگیر کند)، به تنهایی یک معیار کافی، قطعی و امتیازآور نهایی (۹ امتیاز) در سیستم تشخیصی ACR/EULAR است و شک بالینی را مستقیماً به یقین تبدیل می‌نماید. سفتی دیستال به MCP تشخیص‌های افتراقی فراوانی از دیابت تا اسکلروداکتیلی ایزوله دارد.
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div class="mini-card mc-blue">
+        <h5>مراحل سه‌گانه درگیری پوستی</h5>
+        <ul class="list-styled">
+          <li><span class="li-content"><strong>۱. فاز ادماتوز (Puffy Hands):</strong> در مراحل اولیه، انگشتان و دست‌ها به شدت پف‌آلود می‌شوند (به ویژه صبح‌ها). اغلب با سندرم تونل کارپال یا روماتیسم مفصلی اولیه اشتباه گرفته می‌شود.</span></li>
+          <li><span class="li-content"><strong>۲. فاز ایندوراتیو و سفت‌شدگی (Indurative Phase):</strong> جایگزینی فیبروبلاست‌ها و رسوب متراکم کلاژن در درم؛ پوست سفت، ضخیم، غیرقابل چنگ‌زدن و غیرقابل پینچ می‌شود. ضمائم پوست (غدد عرق، چربی و فولیکول مو) تخریب می‌شوند.</span></li>
+          <li><span class="li-content"><strong>۳. فاز آتروفیک نهایی (Atrophic Phase):</strong> پوست به شدت خشک، براق، فاقد مو و چروکیده می‌شود. به دلیل خشکی مفرط و فقدان سبوم، بیماران دچار خارش‌های مقاوم و مکرر می‌شوند که درمان آن آنتی‌هیستامین است (آنتی‌هیستامین برادی‌کینین را مهار می‌کند). برعکس شوگرن، این افراد خشکی دهان و چشم با منشأ درگیری غدد بزاقی ندارند.</span></li>
+        </ul>
+      </div>
+
+      <div class="mini-card mc-orange">
+        <h5>چرا بعد از چند سال سفتی پوست در فرم منتشر کمتر می‌شود؟</h5>
+        <p>
+          در نمودار سیر طبیعی بیماری (Natural History)، میزان سفتی پوست در نوع منتشر ظرف ۳ تا ۴ سال اول به اوج (تا ۴۰ درصد) می‌رسد، اما بعد از چندین سال نمره سفتی به تدریج کاهش می‌یابد.
+        </p>
+        <div class="infobox ib-red">
+          <span class="ib-icon">⚠️</span>
+          <div>
+            <strong>علت پاتولوژیک:</strong> آیا پوست بهبود یافته و نرمال شده است؟ <strong>خیر!</strong> انسداد پیشرونده مویرگ‌ها و ایسکمی فوق‌العاده شدید در طول زمان باعث تخریب کامل و <strong>آتروفی عمیق پوست</strong> می‌شود. پوستِ آتروفی‌شده، نازک و خشک و شبیه پلاستیک و نایلون گشته و اندکی شل به نظر می‌رسد، اما ساختاری کاملاً اسکارگونه و غیرطبیعی دارد.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h4>سایر علائم پوستی شاخص</h4>
+    <ul class="list-styled orange">
+      <li><span class="li-content"><div class="kv-row"><span class="kv-key">نمای نمک و فلفلی (Salt and Pepper Appearance):</span><span class="kv-value">مناطق هیپوپیگمانتاسیون پوست همراه با حفظ پیگمان دور فولیکول‌های مو (Perifollicular Sparing). تفاوت با ویتیلیگو: در اسکلرودرمی اطراف فولیکول مو رنگدانه سالم باقی می‌ماند.</span></div></span></li>
+      <li><span class="li-content"><div class="kv-row"><span class="kv-key">تغییرات صورت، شیارهای دور دهان و دهان پرنده‌ای:</span><span class="kv-value">ایجاد چین‌های عمودی و شعاعی اطراف لب (Radial Furrow یا Vertical Furrow که به آن Rhytid گویند). نازک شدن لب‌ها و کاهش قطر باز شدن دهان (Microstomia / Decreased Oral Aperture) به نحوی که بیمار حتی نمی‌تواند دو انگشت خود را وارد دهان کند.</span></div></span></li>
+      <li><span class="li-content"><div class="kv-row"><span class="kv-key">اسکلروداکتیلی و کنترکچر خمشی (Flexion Contraction):</span><span class="kv-value">سفتی و انقباض پوست سبب خم ماندن دائمی مفاصل انگشتان دست (پنجه گرگی/Claw Hand) و تشکیل کنتراکچرهای شدید می‌شود.</span></div></span></li>
+      <li><span class="li-content"><div class="kv-row"><span class="kv-key">کلسینوز پوستی (Calcinosis Cutis):</span><span class="kv-value">رسوب املاح هیدروکسی‌آپاتیت کلسیم در بافت زیرجلدی و درم انگشتان یا سطوح اکستانسور به علت ایسکمی مزمن که می‌تواند ترشحات گچ‌مانند داشته باشد (در میوپاتی‌های التهابی نظیر درماتومیوزیت نیز دیده می‌شود).</span></div></span></li>
+    </ul>
+
+    <div class="infobox ib-yellow">
+      <span class="ib-icon">📐</span>
+      <div>
+        <strong>سیستم نمره‌دهی استاندارد رُدنان (Modified Rodnan Skin Score - mRSS):</strong>
+        جهت ارزیابی کمی میزان درگیری پوستی از نمره رودنان تعدیل‌شده استفاده می‌شود:
+        <ul class="list-styled">
+          <li><span class="li-content">بدن به <strong>۱۷ ناحیه آناتومیک</strong> تقسیم می‌شود: صورت، قدام قفسه سینه، شکم، و به صورت دوطرفه (بازوها، ساعدها، دست‌ها، انگشتان، ران‌ها، ساق پاها، پشت پاها).</span></li>
+          <li><span class="li-content">در هر ناحیه با لمس بالینی و آزمون چین‌خوردگی پوست (Pinch Test)، نمره <strong>۰ تا ۳</strong> تعلق می‌گیرد: ۰ = نرمال، ۱ = ضخامت خفیف (Mild)، ۲ = ضخامت متوسط (Moderate)، ۳ = ضخامت شدید همراه با ناتوانی مطلق در چین دادن پوست (Severe).</span></li>
+          <li><span class="li-content"><strong>حداکثر نمره کل ممکن:</strong> ۱۷ × ۳ = <strong>۵۱</strong>. هرچه نمره بالاتر باشد، احتمال درگیری احشایی و مورتالیتی بالاتر است.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 8 -->
+  <div class="section-header sh-brown" id="sec-msk">
+    <div class="icon">🦴</div>
+    <span>۸. درگیری‌های اسکلتی-عضلانی و پدیده آکرو-استئولیز دیجیتال (Acro-osteolysis)</span>
+  </div>
+
+  <div class="subsection sub-brown">
+    <h4>پاتولوژی مفاصل، تاندون‌ها و استخوان‌ها</h4>
+    <p>
+      شکایات مفصلی و تاندونی در اسکلرودرمی شایع است اما الگوی درگیری استخوانی آن با آرتریت روماتوئید کاملاً متفاوت است:
+    </p>
+
+    <div class="grid2">
+      <div class="mini-card mc-teal">
+        <h5>آرترالژی و سفتی در برابر آرتریت اروزیو</h5>
+        <ul class="list-styled">
+          <li><span class="li-content">بیماران از دردهای منتشر مفصلی شکایت دارند، اما درد آنها ثانویه به سفتی شدید پوست، انقباضات بافت نرم (Contraction) و گیر افتادن تاندون‌هاست.</span></li>
+          <li><span class="li-content"><strong>عدم ایجاد اروژن مفصلی:</strong> برخلاف آرتریت روماتوئید (RA)، در اسکلرودرمی خردشدگی غضروف و سینووییت اروزیو اولیه دیده نمی‌شود (مشابه لوپوس که آرتریت غیراروزیو جاكود می‌دهد).</span></li>
+          <li><span class="li-content"><strong>اصطکاک تاندونی (Tendon Friction Rubs):</strong> با حرکت تاندون‌ها در غلاف فیبروزه، صدای غژغژ شبیه چرم لمس و شنیده می‌شود که نشانه فرم دیفیوز پیشرونده است.</span></li>
+        </ul>
+      </div>
+
+      <div class="mini-card mc-red">
+        <h5>پدیده آکرو-استئولیز (Acro-osteolysis of Digital Tufts)</h5>
+        <ul class="list-styled red">
+          <li><span class="li-content">در گرافی رادیولوژی دست، <strong>جذب و تحلیل رفتن توفت‌های انتهایی بند دیستال (DIP)</strong> انگشتان مشاهده می‌شود.</span></li>
+          <li><span class="li-content"><strong>مکانیسم:</strong> به علت بسته شدن کامل ریزعروق انتهایی و ایسکمی شدید و مزمن، بافت استخوانی دچار استئونکروز و تحلیل خودبه‌خودی می‌گردد.</span></li>
+          <li><span class="li-content"><strong>اسکارهای حفره‌ای (Digital Pitting Scars):</strong> در پولپ انگشتان در اثر نکروز و ایسکمی، فرورفتگی‌های اسکاری کوچک بر جای می‌ماند که تقریباً پاتوگنومونیک اسکلرودرمی است.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 9 -->
+  <div class="section-header sh-cyan" id="sec-pulmonary">
+    <div class="icon">🫁</div>
+    <span>۹. درگیری ریوی: بیماری بینابینی ریه (ILD) و هایپرتنشن شریان پولمونر (PAH)</span>
+  </div>
+
+  <div class="subsection sub-cyan">
+    <h4>علت نخست مرگ‌ومیر در اسکلرودرمی: مقایسه موشکافانه دو تظاهر ریوی</h4>
+    <p>
+      امروزه درگیری‌های ریوی شایع‌ترین عامل مرگ در اسکلرودرمی سیستمیک هستند. این درگیری به دو شکل کاملاً مجزا بر حسب نوع بیماری ظاهر می‌شود:
+    </p>
+
+    <div class="infobox ib-teal">
+      <span class="ib-icon">❓</span>
+      <div>
+        <strong>سناریوی بالینی آزمون کشوری:</strong>
+        خانم ۳۳ ساله‌ای با سابقه پدیده رینود از ۵ سال قبل، جهت چکاپ مراجعه کرده است. در معاینه، چندین اسکار حفره‌ای و زخم بهبودیافته در ناحیه پولپ انگشتان دیده می‌شود. بیمار کاملاً بدون علامت ریوی بوده و هیچ‌گونه تنگی نفسی ندارد. <strong>ارجح‌ترین، حساسترین و اولین اقدام برای ارزیابی ریه این بیمار چیست؟</strong><br>
+        <span class="tag tag-teal">پاسخ قطعی:</span> <strong>سی‌تی‌اسکن ریه با وضوح بالا (High-Resolution CT / HRCT)</strong>.<br>
+        <em>استدلال بالینی:</em> HRCT حساسترین روش بررسی ریه در اسکلرودرمی است؛ چراکه در <strong>۲۰ درصد موارد، بیماران درگیری فعال پارانشیم ریه (ILD) دارند اما کاملاً بدون علامت بالینی هستند!</strong> لذا به محض قطعی شدن تشخیص اسکلرودرمی، انجام HRCT غربالگری الزامی است.
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>شاخص ارزیابی</th>
+            <th>بیماری بینابینی ریه (SSc-ILD)</th>
+            <th>پرفشاری شریان ریه (SSc-PAH)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>فرم غالب بیماری</strong></td>
+            <td>اسکلرودرمی منتشر (dcSSc)</td>
+            <td>اسکلرودرمی محدود (lcSSc)</td>
+          </tr>
+          <tr>
+            <td><strong>پاتولوژی اولیه</strong></td>
+            <td>فیبروز بافت و سپسیس کلاژن در دیواره آلوئول‌ها و سپتوم‌های بین‌لوبولی</td>
+            <td>وازوپاتی انسدادی و بازآرایی آرتریول‌های شریان ریوی (بدون فیبروز پارانشیم)</td>
+          </tr>
+          <tr>
+            <td><strong>یافته‌های HRCT ریه</strong></td>
+            <td><strong>غیرطبیعی:</strong> کدورت‌های شیشه مات (Ground-Glass)، ضخیم‌شدگی سپتوم‌ها (Septal Thickening)، برونشکتازی کششی، و در فاز پیشرفته <strong>نمای لانه زنبوری (Honeycombing)</strong></td>
+            <td><strong>کاملاً نرمال و تمیز</strong> (بیمار تنگی نفس شدید دارد اما تصویر بافت ریه در HRCT شفاف است)</td>
+          </tr>
+          <tr>
+            <td><strong>قاعده ۳ لایه فیبروز</strong></td>
+            <td>درگیری فیبروز بیشتر در سپتوم‌های اینفریور و بازال (Inferior Lobular Septal)؛ اگر <strong>حداقل ۳ لایه لانه زنبوری</strong> دیده شود فیبروز قطعی است، کمتر از آن ممکن است ناشی از آتلکتازی وضعیتی (Gravitational) باشد</td>
+            <td>مطرح نمی‌باشد</td>
+          </tr>
+          <tr>
+            <td><strong>روش غربالگری و تشخیصی</strong></td>
+            <td>HRCT ریه + اسپیرومتری و تست ظرفیت انتشار گازها (PFT: FVC & DLCO)</td>
+            <td>اکوکاردیوگرافی داپلر (سنجش PAP تخمینی) و تشخیص قطعی با <strong>کاتتریزاسیون راست قلب (RHC)</strong></td>
+          </tr>
+          <tr>
+            <td><strong>معیارهای عددی فشار ریه</strong></td>
+            <td>معمولاً ثانویه به تخریب بستر عروقی در مراحل پایانی</td>
+            <td>فشار سیستولیک شریان ریه در اکو <strong>بیش از ۴۰ میلی‌متر جیوه</strong>؛ و در آنژیوگرافی عروق ریوی / کاتتریزاسیون، میانگین فشار ریوی (mPAP) <strong>بیش از ۲۵ میلی‌متر جیوه</strong> (در استراحت)</td>
+          </tr>
+          <tr>
+            <td><strong>تظاهر بالینی اصلی</strong></td>
+            <td>سرفه‌های خشک، تنگی نفس پیشرونده، رال‌های کراکل کرپیتان دوفازی در قاعده ریه‌ها</td>
+            <td>تنگی نفس فعالیتی شدید، خستگی مفرط، هایپرتروفی بطن راست (Cor Pulmonale) و سنکوپ</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="infobox ib-blue">
+      <span class="ib-icon">🩺</span>
+      <div>
+        <strong>تشخیص افتراقی‌های تنگی نفس حاد یا پیشرونده در اسکلرودرمی:</strong>
+        ۱. پرفشاری شریان ریوی (PAH)، ۲. فیبروز ریوی (ILD)، ۳. آنمی ناشی از کم‌خونی فقر آهن (خونریزی گوارشی GAVE) یا میکروآنژیوپاتی همولیتیک، ۴. ترومبوآمبولی ریه (PE)، ۵. نارسایی دیافراگماتیک یا درگیری قلبی.
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 10 -->
+  <div class="section-header sh-red" id="sec-renal">
+    <div class="icon">🫀</div>
+    <span>۱۰. بحران کلیوی اسکلرودرمی (SRC): تظاهرات، نمای پوست‌پیازی و پروتکل کاپتوپریل</span>
+  </div>
+
+  <div class="subsection sub-red">
+    <h4>اورژانس حیاتی روماتولوژی: Scleroderma Renal Crisis (SRC)</h4>
+    <p>
+      بحران کلیوی در ۱۰ تا ۲۰ درصد بیماران مبتلا به اسکلرودرمی منتشر رخ می‌دهد و در صورت عدم مهار سریع، کشنده خواهد بود.
+    </p>
+
+    <div class="grid2">
+      <div class="mini-card mc-red">
+        <h5>تظاهرات سه‌گانه کلاسیک کرایسیس کلیه</h5>
+        <ul class="list-styled red">
+          <li><span class="li-content"><strong>۱. جهش ناگهانی کراتینین:</strong> نارسایی حاد کلیه از نوع اولیگوریک که طی چند ساعت تا چند روز کراتینین سرم را به سرعت بالا می‌برد.</span></li>
+          <li><span class="li-content"><strong>۲. پرفشاری خون بدخیم و تسریع‌شده:</strong> جهش فشار خون به بالای ۱۷۰/۱۰۰ تا >۱۷۰/۱۳۰ میلی‌متر جیوه همراه با سردرد شدید و رتینوپاتی.</span></li>
+          <li><span class="li-content"><strong>۳. کم‌خونی همولیتیک میکروآنژیوپاتیک (MAHA):</strong> تخریب مکانیکی گلبول‌های قرمز در شریانچه‌های آسیب‌دیده با حضور <strong>شیستوسیت‌ها (Schistocytes / Helmet cells)</strong> در لام خون محیطی و ترومبوسیتوپنی.</span></li>
+        </ul>
+      </div>
+
+      <div class="mini-card mc-orange">
+        <h5>پاتولوژی عروق کلیه و فرم‌های خاص</h5>
+        <ul class="list-styled orange">
+          <li><span class="li-content"><strong>نمای پوست‌پیازی (Onion-skinning appearance):</strong> بیوپسی کلیه هیپرپلازی شدید انتیما به صورت لایه‌های هم‌مرکز پیازی و ترومبوز فیبرینی در شریانچه‌های بین‌لوبولی را نشان می‌دهد.</span></li>
+          <li><span class="li-content"><strong>بحران کلیوی با فشار خون نرمال (Normotensive SRC):</strong> در حدود ۱۰ تا ۱۱ درصد موارد، بیمار دچار نارسایی حاد کلیه و شیستوسیتوز می‌شود اما فشار خونش نرمال است؛ این فرم به دلیل تاخیر در تشخیص، بدترین پروگنوز را دارد.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="infobox ib-red">
+      <span class="ib-icon">💊</span>
+      <div>
+        <strong>پروتکل درمانی دارویی در SRC و خطای بزرگ پیشگیری:</strong>
+        <div class="kv-row"><span class="kv-key">داروی نجات‌بخش خط اول:</span><span class="kv-value">مهارکننده‌های آنزیم مبدل آنژیوتانسین با اثر سریع نظیر <strong>کاپتوپریل (Captopril)</strong>. حتی اگر کراتینین بالا رود، مصرف دارو نباید قطع شود زیرا نجات عروق کلیه در گرو مهار شدید محور رنین-آنژیوتانسین است.</span></div>
+        <div class="kv-row"><span class="kv-key">خطای مهلک (پرهیز از مصرف پیشگیرانه):</span><span class="kv-value">تجویز روتین و پیشگیرانه مهارکننده‌های ACE در یک بیمار اسکلرودرمی که هنوز کرایسیس نگرفته، <strong>ممنوع</strong> است؛ چراکه بروز فشار خون بالا را در زمان بحران ماسک کرده و بیمار را به فرم خطرناک <em>Normotensive Renal Crisis</em> تبدیل می‌کند! در صورت نیاز به کنترل فشار خون روتین، از بپلوک‌کننده‌های کانال کلسیم مانند <strong>دیلتیازم</strong> استفاده می‌شود.</span></div>
+        <div class="kv-row"><span class="kv-key">قانون طلایی پایش فشار خون در منزل:</span><span class="kv-value">تمام بیماران اسکلرودرمی باید <strong>به صورت دوره‌ای (هفتگی)</strong> فشار خون خود را در منزل چک کنند؛ هرگونه افزایش فشار خون به بالای <strong>۱۲۵ روی ۷۵ میلی‌متر جیوه</strong> زنگ خطری جدی است و بیمار باید فوراً به پزشک روماتولوژیست مراجعه کند.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 11 -->
+  <div class="section-header sh-teal" id="sec-gi-cardiac">
+    <div class="icon">🍽️</div>
+    <span>۱۱. درگیری دستگاه گوارش (GAVE, SIBO) و اختلالات هدایتی میوکارد</span>
+  </div>
+
+  <div class="subsection sub-teal">
+    <h4>پاتولوژی حرکتی روده و ناهنجاری‌های عروقی گوارشی</h4>
+    <p>
+      دستگاه گوارش دومین ارگان شایع درگیر پس از پوست است (تا ۹۰٪ مبتلایان). آتروفی لایه عضلانی صاف و فیبروز دیواره روده در کنار آسیب اعصاب اتونومیک، حرکات دودی دستگاه گوارش را به شدت مهار می‌کند.
+    </p>
+
+    <div class="grid2">
+      <div class="mini-card mc-teal">
+        <h5>تظاهرات روده باریک و بزرگ</h5>
+        <ul class="list-styled teal">
+          <li><span class="li-content"><strong>رشد بیش از حد باکتری‌ها (Bacterial Overgrowth / SIBO):</strong> رکود محتویات روده باریک منجر به تخمیر میکروبی، اتساع شکم، نفخ شدید و اسهال چرب می‌شود.</span></li>
+          <li><span class="li-content"><strong>یبوست شدید و متناوب:</strong> کاهش پیشرانه کولون یبوست پایدار می‌آفریند.</span></li>
+          <li><span class="li-content"><strong>سوء جذب و سوء تغذیه:</strong> به علت فقدان حرکات هماهنگ، جذب اسید چرب و ویتامین‌ها مختل و کاهش وزن شدید رخ می‌دهد.</span></li>
+          <li><span class="li-content"><strong>انسداد کاذب روده (Intestinal Pseudo-obstruction):</strong> فلج حرکتی روده که نمای رادیوگرافیک اتساع گسترده روده بدون وجود مانع مکانیکی را نشان می‌دهد.</span></li>
+        </ul>
+      </div>
+
+      <div class="mini-card mc-red">
+        <h5>معده هندوانه‌ای (Watermelon Stomach / GAVE)</h5>
+        <ul class="list-styled red">
+          <li><span class="li-content"><strong>نام اختصاری:</strong> Gastric Antral Vascular Ectasia.</span></li>
+          <li><span class="li-content">در آندوسکوپی، عروق متسع و پیچ‌خورده موکوزا در ناحیه آنتر معده به صورت نوارهای طولی قرمز موازی دیده می‌شوند که کاملاً شبیه خطوط پوست هندوانه است.</span></li>
+          <li><span class="li-content"><strong>اهمیت بالینی:</strong> منبع مهم خونریزی‌های مخفی گوارشی، ملنا و کم‌خونی فقر آهن شدید و مقاوم به درمان در مبتلایان به اسکلرودرمی. درمان موضعی انتخابی آن کواگولاسیون با پلاسمای آرگون (APC) از طریق آندوسکوپی است.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <h4>درگیری قلبی در اسکلرودرمی</h4>
+    <ul class="list-styled teal">
+      <li><span class="li-content"><div class="kv-row"><span class="kv-key">باند فیبروز میوکارد:</span><span class="kv-value">به صورت باندهای فیبروتیک و کلاژنی چندکانونی (Patchy Myocardial Fibrosis) در نتیجه ایسکمی ریزعروقی کرونر پدیدار می‌شود.</span></div></span></li>
+      <li><span class="li-content"><div class="kv-row"><span class="kv-key">اختلالات هدایتی و آریتمی‌ها:</span><span class="kv-value">فیبروز گره‌های هدایتی باعث بلوک‌های قلبی (Heart Blocks)، بلوک شاخه‌ای و دیس‌ریتمی‌های بطنی خطرناک می‌گردد.</span></div></span></li>
+      <li><span class="li-content"><div class="kv-row"><span class="kv-key">افیوژن پریکارد:</span><span class="kv-value">تجمع مایع در پریکارد معمولاً بدون علامت بوده اما در فرم‌های پرفشار ریوی نشانه پیش‌فشار بارز بطن راست و پروگنوز نامساعد است.</span></div></span></li>
+    </ul>
+  </div>
+
+  <!-- SECTION 12 -->
+  <div class="section-header sh-indigo" id="sec-criteria">
+    <div class="icon">📋</div>
+    <span>۱۲. معیارهای طبقه‌بندی جامع ACR/EULAR 2013 (جدول کامل امتیازدهی)</span>
+  </div>
+
+  <div class="subsection sub-indigo">
+    <h4>معیارهای مشترک کالج روماتولوژی آمریکا و اتحادیه اروپا علیه روماتیسم</h4>
+    <p>
+      این سیستم طبقه‌بندی دارای حساسیت و اختصاصیت بالای ۹۵ درصد است. در صورتی که مجموع امتیازات بیمار به <strong>۹ امتیاز یا بیشتر (Total Score &ge; 9)</strong> برسد، بیمار قطعاً مبتلا به <strong>اسکلروز سیستمیک قطعی (Definite Systemic Sclerosis)</strong> طبقه‌بندی می‌شود.
+    </p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>آیتم بالینی (Item)</th>
+            <th>زیرگروه ارزیابی (Sub-item)</th>
+            <th>امتیاز (Weight / Score)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background-color: #e8eaf6;">
+            <td><strong>ضخیم شدن پوست هر دو دست با گسترش به پروگزیمال مفاصل MCP</strong></td>
+            <td>معیار کافی تشخیصی (Sufficient Criterion)</td>
+            <td><span class="tag tag-purple">۹ امتیاز (تشخیص قطعی به‌تنهایی)</span></td>
+          </tr>
+          <tr>
+            <td rowspan="2"><strong>ضخیم شدن پوست انگشتان دست</strong><br><small>(تنها بالاترین امتیاز محاسبه می‌شود)</small></td>
+            <td>انگشتان پف‌آلود (Puffy Fingers)</td>
+            <td><span class="tag tag-blue">۲ امتیاز</span></td>
+          </tr>
+          <tr>
+            <td>اسکلروداکتیلی (Sclerodactyly) در حدفاصل MCP تا PIP</td>
+            <td><span class="tag tag-blue">۴ امتیاز</span></td>
+          </tr>
+          <tr>
+            <td rowspan="2"><strong>ضایعات نوک انگشتان</strong><br><small>(تنها بالاترین امتیاز محاسبه می‌شود)</small></td>
+            <td>زخم‌های نوک انگشتان (Digital Tip Ulcers)</td>
+            <td><span class="tag tag-orange">۲ امتیاز</span></td>
+          </tr>
+          <tr>
+            <td>اسکارهای حفره‌ای نوک انگشت (Digital Pitting Scars)</td>
+            <td><span class="tag tag-orange">۳ امتیاز</span></td>
+          </tr>
+          <tr>
+            <td><strong>تلانژکتازی (Telangiectasia)</strong></td>
+            <td>ضایعات عروقی متسع ماکولار در دست، صورت یا مخاط دهان</td>
+            <td><span class="tag tag-teal">۲ امتیاز</span></td>
+          </tr>
+          <tr>
+            <td><strong>ناهنجاری در کاپیلاروسکوپی چین ناخن</strong></td>
+            <td>الگوی اسکلرودرمی (Giant Capillaries یا Avascular Areas)</td>
+            <td><span class="tag tag-teal">۲ امتیاز</span></td>
+          </tr>
+          <tr>
+            <td rowspan="2"><strong>پرفشاری ریوی و/یا بیماری بینابینی ریه</strong><br><small>(حداکثر امتیاز این بخش ۲ است)</small></td>
+            <td>پرفشاری شریان ریوی (Pulmonary Arterial Hypertension - PAH)</td>
+            <td><span class="tag tag-red">۲ امتیاز</span></td>
+          </tr>
+          <tr>
+            <td>بیماری بینابینی ریه (Interstitial Lung Disease - ILD)</td>
+            <td><span class="tag tag-red">۲ امتیاز</span></td>
+          </tr>
+          <tr>
+            <td><strong>پدیده رینود (Raynaud's Phenomenon)</strong></td>
+            <td>وجود پدیده وازواسپاستیک تایید شده با شرح‌حال بالینی</td>
+            <td><span class="tag tag-yellow">۳ امتیاز</span></td>
+          </tr>
+          <tr>
+            <td><strong>اتوآنتی‌بادی‌های اختصاصی اسکلرودرمی</strong><br><small>(حداکثر امتیاز این بخش ۳ است)</small></td>
+            <td>مثبت بودن هر یک از آنتی‌بادی‌های:<br>• Anti-Centromere (ACA)<br>• Anti-Scl-70 (Topoisomerase I)<br>• Anti-RNA Polymerase III</td>
+            <td><span class="tag tag-purple">۳ امتیاز</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="infobox ib-green">
+      <span class="ib-icon">✅</span>
+      <div>
+        <strong>فرمول محاسبه کرایتریا:</strong>
+        برای هر رده تشخیصی تنها بیشترین امتیاز تعلق می‌گیرد. بیماری که دارای ضخامت پوست پروگزیمال به MCP باشد مستقیماً نمره ۹ گرفته و نیاز به بررسی سایر موارد جدول ندارد. سایر بیماران با ترکیب رینود (۳) + اتوآنتی‌بادی (۳) + تلانژکتازی (۲) + اسکار حفره‌ای (۳) = ۱۱ امتیاز، به سادگی حائز تشخیص قطعی SSc می‌گردند.
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 13 -->
+  <div class="section-header sh-green" id="sec-treatment">
+    <div class="icon">💊</div>
+    <span>۱۳. راهنمای جامع مدیریت درمانی و پروتکل فارماکوتراپی بر اساس ارگان هدف</span>
+  </div>
+
+  <div class="subsection sub-green">
+    <h4>استراتژی ۴ گانه مدیریت بیماری</h4>
+    <div class="grid2">
+      <div class="mini-card mc-blue">
+        <h5>چهار رکن بنیادین کنترل اسکلرودرمی</h5>
+        <ol style="padding-right: 20px; line-height: 1.8;">
+          <li><strong>تشخیص زودهنگام:</strong> غربالگری ریوی و کلیوی به محض شک بالینی.</li>
+          <li><strong>باز نگه داشتن عروق:</strong> استفاده از داروهای وازودیلاتور محیطی.</li>
+          <li><strong>سرکوب ایمنی:</strong> مهار سیستم ایمنی قبل از بروز فیبروز پایدار.</li>
+          <li><strong>مهار و تجزیه فیبروز:</strong> بکارگیری ترکیبات آنتی‌فیبروتیک.</li>
+        </ol>
+      </div>
+
+      <div class="mini-card mc-green">
+        <h5>خط اول وازودیلاتورها در رینود</h5>
+        <p>
+          درمان اصلی و انتخابی رینود، <strong>بلوک‌کننده‌های کانال کلسیم (Calcium Channel Blockers)</strong> هستند:
+        </p>
+        <ul class="list-styled green">
+          <li><span class="li-content">دی‌هیدروپیریدین‌ها: <strong>نیفدیپین خوراکی آهسته‌رهش</strong> یا آملودیپین.</span></li>
+          <li><span class="li-content">غیر دی‌هیدروپیریدین‌ها: <strong>دیلتیازم (Diltiazem)</strong>.</span></li>
+          <li><span class="li-content">سایر گزینه‌ها: مهارکننده‌های انتخابی بازجذب سروتونین (<strong>SSRI نظیر فلوکستین</strong>) به دلیل اثرات اتساع عروقی و مهار فعال‌سازی پلاکتی بسیار موثرند.</span></li>
+          <li><span class="li-content">آسپرین دوز پایین: در موارد رینود شدید همراه با زخم‌های مکرر جهت مهار چسبندگی پلاکتی به اندوتلیوم تخریب‌شده تجویز می‌شود.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <h4>جدول جامع دارودرمانی اسکلرودرمی بر اساس ارگان درگیر (Reference Guide)</h4>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>تظاهر بالینی ارگان</th>
+            <th>درمان خط اول (Primary Therapy)</th>
+            <th>درمان‌های جایگزین و خط دوم (Alternative / 2nd-Line)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>پدیده رینود (Raynaud's)</strong></td>
+            <td>وازودیلاتورها: CCB (نیفدیپین، دیلتیازم) یا مهارکننده PDE-5 (سیلدنافیل) + آسپرین دوز کم</td>
+            <td>آنالوگ پروستاسایکلین وریدی (Iloprost)، بلوک‌کننده رسپتور اندوتلین (Bosentan)، پرازوسین، سمپاتکتومی دیجیتال</td>
+          </tr>
+          <tr>
+            <td><strong>بحران کلیوی فشارقوی (SRC)</strong></td>
+            <td><strong>مهارکننده‌های ACE (کاپتوپریل با دوز تنظیم‌شونده سریع)</strong></td>
+            <td>ARBها، بلاک‌کننده‌های کانال کلسیم، دیالیز خونی، پیوند کلیه (حداقل پس از ۱۲ تا ۲۴ ماه تاخیر به دلیل احتمال ریکاوری)</td>
+          </tr>
+          <tr>
+            <td><strong>بیماری پوست (Skin Fibrosis)</strong></td>
+            <td>مایکوفنولات موفتیل (MMF)، متوتروکسات (MTX)، سیکلوفسفامید</td>
+            <td>ایمونوگلوبولین وریدی (IVIG)، آنتی‌تیموسیت گلوبولین (ATG)، پیوند اتولوگ سلول‌های بنیادی خونساز (AHSCT) در موارد پیشرونده شدید</td>
+          </tr>
+          <tr>
+            <td><strong>فیبروز ریه (SSc-ILD)</strong></td>
+            <td>مایکوفنولات موفتیل (MMF)، پالس سیکلوفسفامید، <strong>توسیلیزوماب (Actemra)</strong></td>
+            <td><strong>داروهای آنتی‌فیبروتیک خوراکی:</strong><br>۱. <strong>پیرفنیدون (Pirfenidone)</strong><br>۲. <strong>نینتدانیب (Nintedanib)</strong><br>ریتوکسیماب، پیوند ریه</td>
+          </tr>
+          <tr>
+            <td><strong>پرفشاری شریان ریه (PAH)</strong></td>
+            <td>مهارکننده‌های PDE-5 (سیلدنافیل، تادالافیل)، آنتاگونیست گیرنده اندوتلین ETA (بوزنتان، آمبریزنتان) یا درمان ترکیبی ابتدایی</td>
+            <td>آنالوگ‌های پروستاسایکلین تزریقی (اپوپروستنول، ایلوپروست)، تحریک‌کننده‌های گوانیلات سیکلاز (ریوسیگوات)، پیوند ریه</td>
+          </tr>
+          <tr>
+            <td><strong>دستگاه گوارش فوقانی (Gastroesophageal)</strong></td>
+            <td>مهارکننده‌های پمپ پروتون با دوز بالا (PPIs)، اصلاح سبک زندگی، داروهای پروکینتیک (متوکلوپرامید، دومپریدون)</td>
+            <td>آندوسکوپی درمانی و کوآگولاسیون آرگون پلاسما (APC) جهت کنترل خونریزی‌های معده هندوانه‌ای (GAVE)</td>
+          </tr>
+          <tr>
+            <td><strong>دستگاه گوارش تحتانی (SIBO و یبوست)</strong></td>
+            <td>پروبیوتیک‌ها، آنتی‌بیوتیک‌های چرخشی (ریفاقسیمین، مترونیدازول، سیپروفلوکساسین) جهت مهار رشد باکتری‌ها</td>
+            <td>پروکینتیک‌ها، تغذیه کامل وریدی (TPN) در فلج شدید حرکتی و انسداد کاذب</td>
+          </tr>
+          <tr>
+            <td><strong>درگیری قلبی (Cardiac)</strong></td>
+            <td>درمان استاندارد نارسایی قلب، دیورتیک‌ها، داروهای ضدآریتمی، CCBها</td>
+            <td>داروهای سرکوب‌کننده ایمنی، IVIG (در صورت میوکاردیت التهابی فعال)</td>
+          </tr>
+          <tr>
+            <td><strong>مفاصل و تاندون‌ها (Joints)</strong></td>
+            <td>پردنیزولون با دوز کم (&le; 10 mg)، متوتروکسات، ریتوکسیماب</td>
+            <td>IVIG، مهارکننده‌های TNF، فیزیوتراپی و کاردرمانی مستمر جهت پیشگیری از کنتراکچر</td>
+          </tr>
+          <tr>
+            <td><strong>میوپاتی و میوزیت همپوشان</strong></td>
+            <td>پردنیزولون خوراکی، متوتروکسات، آزاتیوپرین</td>
+            <td>ایمونوگلوبولین وریدی (IVIG)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="infobox ib-red">
+      <span class="ib-icon">⚠️</span>
+      <div>
+        <strong>هشدار مرگبار تجویز کورتیکواستروئیدها در اسکلرودرمی:</strong>
+        تجویز دوزهای متوسط تا بالای گلوکوکورتیکوئیدها (معادل <strong>پردنیزولون بیش از ۱۵ میلی‌گرم در روز</strong>) به ویژه در فرم منتشر، قوی‌ترین محرک برانگیخته شدن <strong>بحران کلیوی حاد (Scleroderma Renal Crisis)</strong> است. در بیماران اسکلرودرمی، کورتون‌ها همواره باید در پایین‌ترین دوز ممکن و با احتیاط کامل تجویز گردند.
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 14: SUMMARY FLASHCARDS -->
+  <div class="section-header sh-pink">
+    <div class="icon">⚡</div>
+    <span>۱۴. خلاصه مرور سریع نکات کلیدی (High-Yield Pearls)</span>
+  </div>
+
+  <div class="subsection sub-pink">
+    <div class="grid2">
+      <div class="mini-card mc-purple">
+        <h5>تفاوت‌های کلیدی دو فرم اصلی</h5>
+        <div class="kv-row"><span class="kv-key">اسکلرودرمی منتشر:</span><span class="kv-value">سفتی پوست بالای آرنج/زانو، رینود زودهنگام به تظاهر احشایی (&lt; ۱ سال)، درگیری شدید ریه با ILD، خطر بحران کلیه، آنتی‌بادی Scl-70.</span></div>
+        <div class="kv-row"><span class="kv-key">اسکلرودرمی محدود:</span><span class="kv-value">سفتی پوست زیر آرنج/زانو، رینود طول‌کشیده سال‌ها قبل از ارگان‌ها، درگیری دیرهنگام ریه با PAH، ریسک ناچیز بحران کلیه، آنتی‌بادی سنترومر (ACA).</span></div>
+      </div>
+
+      <div class="mini-card mc-teal">
+        <h5>نکات سرنوشت‌ساز امتحانی</h5>
+        <div class="kv-row"><span class="kv-key">بهترین ابزار افتراق رینود:</span><span class="kv-value">کاپیلاروسکوپی چین ناخن (جستجوی مویرگ‌های Hairpin).</span></div>
+        <div class="kv-row"><span class="kv-key">تست غربالگری ریه حتی بی علامت:</span><span class="kv-value">HRCT قفسه سینه (در ۲۰٪ بی‌علامت‌ها ILD پنهان است).</span></div>
+        <div class="kv-row"><span class="kv-key">داروی نجات‌بخش بحران کلیه:</span><span class="kv-value">کاپتوپریل (مهارکننده ACE).</span></div>
+        <div class="kv-row"><span class="kv-key">داروهای مهارکننده فیبروز ریه:</span><span class="kv-value">نینتدانیب (Nintedanib) و پیرفنیدون (Pirfenidone).</span></div>
+      </div>
+    </div>
+  </div>
+
+</div> <!-- END MAIN -->
+
+<!-- ===================== FOOTER ===================== -->
+<div class="footer">
+  دانشگاه علوم پزشکی • گروه آموزشی بیماری‌های داخلی و فوق‌تخصصی روماتولوژی<br>
+  محتوای آموزشی جلسه هشتم: اسکلرودرمی و اسکلروز سیستمیک (مدرس: دکتر سلطانی)<br>
+  تنظیم و بازبینی محتوا: احمدرضا عبداللهی پور | توسعه‌یافته با قابلیت‌های پیشرفته چندرسانه‌ای
+</div>
+
+<!-- ===================================================
+     ۴. ساختار کدهای HTML ابزارهای تعاملی (Floating UI)
+     =================================================== -->
+<!-- ===== نوار شناور ابزار چند پلتفرمی ===== -->
+<div id="highlight-panel">
+  <span>🖍️ ابزار مطالعه:</span>
+  <button class="hl-btn hl-btn-yellow" onclick="applyColorHighlight('#fff59d')" title="زرد"></button>
+  <button class="hl-btn hl-btn-green" onclick="applyColorHighlight('#c8e6c9')" title="سبز"></button>
+  <button class="hl-btn hl-btn-blue" onclick="applyColorHighlight('#bbdefb')" title="آبی"></button>
+  <button class="hl-btn hl-btn-pink" onclick="applyColorHighlight('#f8bbd0')" title="صورتی"></button>
+  <button class="panel-action-btn" onclick="addNoteAtSelection()">📝 یادداشت</button>
+  <button class="panel-action-btn" onclick="viewAllNotes()">🔍 لیست یادداشت‌ها</button>
+  <button class="panel-action-btn panel-action-btn-red" onclick="clearSelectedHighlight()">❌ پاک‌کردن</button>
+  <button class="panel-action-btn" style="background:#2e7d32;" onclick="exportModifiedHTML()">📥 خروجی گرفتن از فایل</button>
+</div>
+
+<!-- پنجره مودال ثبت/ویرایش یادداشت -->
+<div class="modal-overlay" id="note-edit-modal">
+  <div class="modal-card">
+    <h4 id="modal-title">ثبت یادداشت جدید در این محل</h4>
+    <textarea class="modal-textarea" id="modal-note-input" placeholder="نکته مهم کلاسی خود را جهت مرور سریع بنویسید..."></textarea>
+    <div class="modal-actions">
+      <button class="btn btn-primary" onclick="saveNoteChanges()">💾 ذخیره تغییرات</button>
+      <button class="btn btn-danger" id="btn-delete-note" onclick="deleteActiveNote()">❌ حذف یادداشت</button>
+      <button class="btn btn-secondary" onclick="closeNoteModal()">انصراف</button>
+    </div>
+  </div>
+</div>
+
+<!-- پنجره مودال لیست همه‌ی یادداشت‌ها -->
+<div class="modal-overlay" id="all-notes-modal">
+  <div class="modal-card" style="max-height: 80%; overflow-y: auto; max-width: 600px;">
+    <h4>📋 تمام یادداشت‌های ثبت‌شده شما</h4>
+    <div id="all-notes-list" style="margin-bottom: 20px;">
+      <!-- لیست پویا به صورت خودکار پر خواهد شد -->
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-secondary" onclick="closeAllNotesModal()">بستن پنجره</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===================================================
+     ۵. منطق کدهای جاوا اسکریپت (iOS-Safe و کاملاً پایدار)
+     =================================================== -->
+<script>
+  const storageStateKey = "rheumatology_session8_scleroderma_interactive_state";
+  let savedRange = null; 
+  let activeMarker = null;
+
+  document.addEventListener("DOMContentLoaded", () => {
+    loadPageState();
+  });
+
+  function savePageState() {
+    const mainHTML = document.querySelector('.main').innerHTML;
+    localStorage.setItem(storageStateKey, mainHTML);
+  }
+
+  function loadPageState() {
+    const savedHTML = localStorage.getItem(storageStateKey);
+    if (savedHTML) {
+      document.querySelector('.main').innerHTML = savedHTML;
+    }
+  }
+
+  function applyColorHighlight(colorHex) {
+    const selection = window.getSelection();
+    if (!selection.rangeCount || selection.isCollapsed) {
+      alert("لطفاً ابتدا متنی از جزوه را با ماوس یا لمس طولانی انتخاب کنید.");
+      return;
+    }
+
+    const main = document.querySelector('.main');
+    const originalEditable = main.contentEditable;
+    
+    main.contentEditable = "true";
+    
+    try {
+      document.execCommand("styleWithCSS", false, true);
+      document.execCommand("backColor", false, colorHex);
+    } catch (e) {
+      console.error("خطای هایلایت:", e);
+    }
+    
+    main.contentEditable = originalEditable;
+    selection.removeAllRanges();
+    savePageState();
+  }
+
+  function clearSelectedHighlight() {
+    applyColorHighlight('transparent');
+  }
+
+  function addNoteAtSelection() {
+    const selection = window.getSelection();
+    if (!selection.rangeCount || selection.isCollapsed) {
+      alert("لطفاً ابتدا بخشی از متن را با کشیدن انگشت یا ماوس انتخاب کنید تا یادداشت به آنجا متصل شود.");
+      return;
+    }
+
+    savedRange = selection.getRangeAt(0).cloneRange();
+    
+    activeMarker = null; 
+    document.getElementById("modal-title").innerText = "ثبت یادداشت جدید در این محل";
+    document.getElementById("modal-note-input").value = "";
+    document.getElementById("btn-delete-note").style.display = "none";
+    document.getElementById("note-edit-modal").style.display = "flex";
+  }
+
+  function saveNoteChanges() {
+    const text = document.getElementById("modal-note-input").value.trim();
+    if (!text) {
+      alert("لطفاً متن یادداشت را وارد کنید.");
+      return;
+    }
+
+    if (activeMarker === null) {
+      if (savedRange) {
+        const marker = document.createElement("span");
+        marker.className = "note-marker";
+        marker.setAttribute("data-note", text);
+        marker.innerHTML = `📝<span class="note-tooltip">${escapeHTML(text)}</span>`;
+        marker.contentEditable = "false";
+        
+        try {
+          savedRange.collapse(false);
+          savedRange.insertNode(marker);
+        } catch (e) {
+          console.error("Error inserting marker:", e);
+          alert("امکان درج یادداشت در این بخش به دلیل تداخل تگ‌ها وجود ندارد. لطفا متن ساده‌تری را انتخاب کنید.");
+        }
+        savedRange = null;
+      } else {
+        alert("محدوده متن انتخاب شده معتبر نیست. لطفاً مجدداً متن را انتخاب کنید.");
+        return;
+      }
+    } else {
+      activeMarker.setAttribute("data-note", text);
+      activeMarker.innerHTML = `📝<span class="note-tooltip">${escapeHTML(text)}</span>`;
+    }
+
+    closeNoteModal();
+    savePageState();
+  }
+
+  function deleteActiveNote() {
+    if (activeMarker && confirm("آیا مایل به حذف این یادداشت هستید؟")) {
+      activeMarker.remove();
+      closeNoteModal();
+      savePageState();
+    }
+  }
+
+  function closeNoteModal() {
+    document.getElementById("note-edit-modal").style.display = "none";
+    activeMarker = null;
+    savedRange = null;
+  }
+
+  document.addEventListener("click", (e) => {
+    const marker = e.target.closest(".note-marker");
+    if (marker) {
+      activeMarker = marker;
+      const savedText = activeMarker.getAttribute("data-note") || "";
+      document.getElementById("modal-title").innerText = "مشاهده و ویرایش یادداشت";
+      document.getElementById("modal-note-input").value = savedText;
+      document.getElementById("btn-delete-note").style.display = "inline-block";
+      document.getElementById("note-edit-modal").style.display = "flex";
+    }
+  });
+
+  function viewAllNotes() {
+    const markers = document.querySelectorAll(".note-marker");
+    const listContainer = document.getElementById("all-notes-list");
+    listContainer.innerHTML = "";
+
+    if (markers.length === 0) {
+      listContainer.innerHTML = '<p style="text-align:center; color:var(--muted); font-size:14px; padding:20px 0;">هیچ یادداشتی در کل متن ثبت نشده است.</p>';
+      document.getElementById("all-notes-modal").style.display = "flex";
+      return;
+    }
+
+    markers.forEach((marker, index) => {
+      const noteText = marker.getAttribute("data-note") || "";
+      const context = marker.previousSibling ? marker.previousSibling.textContent.slice(-35) : "...";
+      
+      const card = document.createElement("div");
+      card.className = "mini-card mc-blue";
+      card.style.marginBottom = "12px";
+      card.innerHTML = `
+        <div style="font-size:11px; color:var(--muted); margin-bottom:5px;">یادداشت شماره ${index + 1} (متن مجاور: "...${escapeHTML(context)}")</div>
+        <div style="font-weight:bold; font-size:14px; line-height:1.6; white-space:pre-wrap; color:var(--text);">${escapeHTML(noteText)}</div>
+        <div style="margin-top:10px; display:flex; gap:8px;">
+          <button onclick="scrollToMarker(${index})" class="tag tag-blue" style="border:none; cursor:pointer; padding:4px 10px;">🔍 پرش به محل یادداشت</button>
+          <button onclick="deleteMarkerFromList(${index})" class="tag tag-red" style="border:none; cursor:pointer; padding:4px 10px;">❌ حذف</button>
+        </div>
+      `;
+      listContainer.appendChild(card);
+    });
+
+    document.getElementById("all-notes-modal").style.display = "flex";
+  }
+
+  window.scrollToMarker = function(index) {
+    const markers = document.querySelectorAll(".note-marker");
+    if (markers[index]) {
+      closeAllNotesModal();
+      markers[index].scrollIntoView({ behavior: "smooth", block: "center" });
+      
+      const originalBg = markers[index].style.backgroundColor;
+      markers[index].style.backgroundColor = "#ff5252";
+      markers[index].style.transform = "scale(1.4)";
+      
+      setTimeout(() => {
+        markers[index].style.backgroundColor = originalBg;
+        markers[index].style.transform = "scale(1)";
+      }, 1500);
+    }
+  };
+
+  window.deleteMarkerFromList = function(index) {
+    if (confirm("آیا مایل به حذف این یادداشت هستید؟")) {
+      const markers = document.querySelectorAll(".note-marker");
+      if (markers[index]) {
+        markers[index].remove();
+        savePageState();
+        viewAllNotes(); 
+      }
+    }
+  };
+
+  function exportModifiedHTML() {
+    const docClone = document.cloneNode(true);
+    const currentMainHTML = document.querySelector('.main').innerHTML;
+    docClone.querySelector('.main').innerHTML = currentMainHTML;
+    
+    const htmlString = '<!DOCTYPE html>\n' + docClone.documentElement.outerHTML;
+    
+    const blob = new Blob([htmlString], { type: "text/html;charset=utf-8" });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "rheumatology_session8_scleroderma_interactive_output.html";
+    link.click();
+  }
+
+  function closeAllNotesModal() {
+    document.getElementById("all-notes-modal").style.display = "none";
+  }
+
+  function escapeHTML(str) {
+    return str.replace(/[&<>'"]/g, 
+      tag => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        "'": '&#39;',
+        '"': '&quot;'
+      }[tag] || tag)
+    );
+  }
+</script>
+
+</body>
+</html>
